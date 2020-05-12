@@ -1,5 +1,4 @@
 from django import forms
-
 from .models import Post
 
 # 폼 이름 (ModelForm)

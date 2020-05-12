@@ -1,0 +1,28 @@
+           /* 사이드바 */
+            .sidenav {
+                background-color: Grey;
+                position: fixed;
+                width: 200px;
+                height: 100%;
+                margin-left: -20px;
+                margin-top: 50px;
+            }
+
+            /* 본문 */
+            .page {
+                margin-top: 100px;
+                margin-left: 250px;
+            }
+
+            /* footer */
+            footer {
+                background-color: #555;
+                color: white;
+                padding: 15px;
+            }
+            a , #logo, .index{
+                color: white;
+            }
+            #top_nav {
+                background-color: #458f0b;
+            }
