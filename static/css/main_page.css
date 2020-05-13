@@ -8,7 +8,7 @@
 		margin: 0px;
 		padding: 0px;
 		background: #151515 url(images/bg.png) repeat;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Noto Sans KR', sans-serif;
 		font-size: 12pt;
 		font-weight: 300;
 		color: rgba(255,255,255,0.4);
@@ -105,7 +105,7 @@
 	ul.style2
 	{
 		margin: 0;
-		padding-top: 1em;
+		padding-top: 0.5em;
 		list-style: none;
 	}
 
@@ -395,7 +395,6 @@
 
 	#page-wrapper
 	{
-
 		overflow: hidden;
 		padding: 5em 0em;
 		background: #FFF;
@@ -429,31 +428,6 @@
 	}
 
 /*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-.nav {/*사이드바 메뉴 사각형 틀*/
-  float: left;
-  width: 240px;
-  background: #333;
-
-}
-.nav-list {/*사이드바 메뉴 리스트 정렬에 관한*/
-  list-style: none;
-  margin: 0;
-  padding: 15px 0;
-}
-.nav-item {/*사이드바 메뉴 텍스트*/
-  text-align:center;
-  margin: 10px 0;
-}
-.nav-link {/*사이드바 메뉴 링크*/
-  display: block;
-  text-decoration: none;
-  padding: 4px 10px;
-  color: #fff;
-}
-/*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
 
@@ -473,6 +447,29 @@
 	#featured img
 	{
 		margin-bottom: 2em;
+	}
+
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+	.boxA,
+	.boxB,
+	.boxC
+	{
+		width: 320px;
+	}
+
+	.boxA,
+	.boxB
+	{
+		float: left;
+		margin-right: 20px;
+	}
+
+	.boxC
+	{
+		float: right;
 	}
 
 /*********************************************************************************/
@@ -498,6 +495,56 @@
 	{
 		letter-spacing: 0.10em;
 	}
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+		padding: 5em 0em 3em 0em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+
+	#footer .boxA,
+	#footer .boxB,
+	#footer .boxC
+	{
+	}
+
+	#footer .boxA
+	{
+	}
+
+	#footer .box
+	{
+		margin-bottom: 4em;
+	}
+
+	#footer img
+	{
+		margin-bottom: 2em;
+	}
+
+	#footer h3
+	{
+		padding-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.8em;
+		font-weight: 300;
+		color: rgba(255,255,255,0.8);
+	}
+
+	#footer .link
+	{
+		display: block;
+		padding-top: 1em;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 700;
+		color: rgba(0,0,0,0.8);
+	}
+
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/

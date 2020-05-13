@@ -1,0 +1,88 @@
+<!--    부트스트렙 사용 했습니다 class="이름"여기서 이름은 부트스트렙 공식 사이트 가서 확인 해 주세요-->
+<!--    http://bootstrapk.com/css/ -->
+<!--  왜 아이콘이 안먹는지는 모르겠읍니다-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DEEPDB</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--아이콘-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    </head>
+    <style>
+        #bottom,
+        #logo_title {
+            color: white;
+            background-color: #458f0b;
+        }
+        .navbar-nav {
+            text-align: center;
+        }
+        .item {
+            color: #778899;
+        }
+        .right_item {
+            color: white;
+        }
+        .col-sm-2 , .right_item, .nav-item{
+            margin: 10px 10px 10px 10px;
+        }
+    </style>
+    <body>
+        <!-- header -->
+        <div class="jumbotron text-center mb-0" id="logo_title">
+            <h1>DEEP DB</h1>
+        </div>
+
+        <!--위에 있는 네비바-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" class="index" href="#">DeepDB</a>
+                </div>
+
+                <ul class="nav navbar-nav nav-center">
+                    <li class="nav-item"><a href="#" class="nav-link"> 데이터베이스 학습 </a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SQL 학습</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SQL 질문답변</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SQL 해석기</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">SQL QUIZ</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><i class="fas fa-user"></i><a href="#" class="right_item">Sign Up</a></li>
+                    <li>
+                        <a href="#" class="right_item"> Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 본문 -->
+        <div class="row">
+            <!-- 왼쪽 네비바 -->
+            <div class="col-sm-2">
+                <!-- side menu (link) -->
+
+                <ul class="list-group">
+                    {% block nav %}
+                    <!--                블라블라 여기다가 쓰기 항목 쓰기-->
+                    {% endblock %}
+                </ul>
+            </div>
+
+            <!-- right content -->
+            <div class="col-sm-9">
+                {% block content %}
+                <!--                블라블라 여기다가 쓰기 레드벨벳 짱-->
+                {% endblock %}
+            </div>
+        </div>
+        <!-- footer 일단 출처 표시 나중에 지울 것-->
+        <div class="jumbotron text-center mt-5 mb-0" id="bottom">DBDBDEEP design by Hongku</div>
+    </body>
+</html>
+<!--참고 코드 https://hongku.tistory.com/308 -->

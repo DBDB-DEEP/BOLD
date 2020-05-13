@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block content %}
+<table class="table table-striped">
+    <thead>
+        <th>번호</th><th>제목</th><th>날짜</th>
+    </thead>
+    <tbody>
+        {% for problem in problems %}
+        <tr onclick="location.href='/quiz/{{ problem.pk }}/'">
+            <!-- 테이블 행 click 시 url 이동 -->
+            <td>{{ problem.pk }}</td>
+            <td>{{ problem.title }}</td>
+            <td>{{ problem.created_date }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<div class="post">
+    <p>view: {{ view }}</p>
+    <!--  ctx['view']-->
+</div>
+{% endblock %} {% block menu %}
+<ul>
+    <li><a href="" accesskey="1" title="">사이트 소개</a></li>
+    <li><a href="#" accesskey="2" title="">데이터베이스 배우기</a></li>
+    <li><a href="/learn/" accesskey="3" title="">SQL 배우기</a></li>
+    <li class="current_page_item"><a href="/quiz/" accesskey="5" title="">SQL Quiz</a></li>
+    <li><a href="/quiz/" accesskey="6" title="">SQL 질문답변</a></li>
+    <li><a href="#" accesskey="7" title="">SQL 해석기</a></li>
+</ul>
+{% endblock %}

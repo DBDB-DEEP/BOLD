@@ -1,17 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-{% extends 'DEEPDB/main_base.html' %} {% block menu %}
+<!--파일 나중에 옮길거면 경로도 바꿔주셔야 합니다 예전 경로는 'DEEPDB/main_base.html' 이였어요-->
+{% extends 'main_base.html' %} {% block menu %}
 <ul>
-    <li class="current_page_item"><a href="main_page.html" accesskey="1" title="">사이트 소개</a></li>
+    <li class="current_page_item"><a href="/home/" accesskey="1" title="">사이트 소개</a></li>
     <li><a href="#" accesskey="2" title="">데이터베이스 배우기</a></li>
-    <li><a href="#" accesskey="3" title="">SQL 배우기</a></li>
-    <li><a href="{% url 'quiz_page' pk=3 %}" accesskey="5" title="">SQL Quiz</a></li>
+    <li><a href="/learn/" accesskey="3" title="">SQL 배우기</a></li>
+    <li><a href="/quiz/" accesskey="5" title="">SQL Quiz</a></li>
     <li><a href="#" accesskey="6" title="">SQL 질문답변</a></li>
     <li><a href="#" accesskey="7" title="">SQL 해석기</a></li>
 </ul>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <strong> <h2>Welcome to DEEP DB</h2></strong>>
 <div class="jumbotron">
     <p>
@@ -22,13 +20,10 @@
         또한 머신러닝을 이용하여 SQL을 자연어로 자연어를 SQL로 번역하여 실습 하여 볼 수도 있습니다.
     </p>
 </div>
-{% endblock %}
-
-{% block footer %}
+{% endblock %} {% block footer %}
 <div class="boxA">
     <div class="box">
         <img src="images/img01.jpg" width="320" height="180" alt="" />
-        <
         <h3>SQL 질문답변</h3>
         <p>궁금하신 점이 있으신가요?</p>
         <a href="#" class="button">Read More</a>
